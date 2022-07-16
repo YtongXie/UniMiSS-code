@@ -67,7 +67,7 @@ pip install timm
 ```
 
 * Download [NIH ChestX-ray8 dataset](https://nihcc.app.box.com/v/ChestXray-NIHCC)
-* Resize ChestX-ray8 images into 512x512 and put the resized images into `data/2D images`.
+* Resize ChestX-ray8 images into 512×512 and put the resized images into `data/2D images`.
 * The image folder of ChestX-ray8 should look like this:
 
 ```.python
@@ -78,14 +78,10 @@ pip install timm
       ...
 ```
 
-
 ### 2. Training 
-cd CoTr_package/CoTr/run
+* cd UniMiSS
+* Run `sh run.sh` for self-supervised pre-training.
 
-* Run `nohup python run_training.py -gpu='0' -outpath='CoTr' 2>&1 &` for training.
-
-### 3. Testing 
-* Run `nohup python run_training.py -gpu='0' -outpath='CoTr' -val --val_folder='validation_output' 2>&1 &` for validation.
 
 ### 4. Citation
 If this code is helpful for your study, please cite:
