@@ -196,12 +196,7 @@ class MiT(nn.Module):
                                                  activation_cfg=activation_cfg,
                                                  weight_std=weight_std, img_size2D=img_size2D, img_size3D=img_size3D,
                                                  modal_type=modal_type)
-        elif encoder == 'large':
-            self.transformer = MiT_encoder.encoder_large(norm_cfg2D=norm_cfg2D, norm_cfg3D=norm_cfg3D,
-                                                 activation_cfg=activation_cfg,
-                                                 weight_std=weight_std, img_size2D=img_size2D, img_size3D=img_size3D,
-                                                 modal_type=modal_type)
-
+            
         total = sum([param.nelement() for param in self.transformer.parameters()])
         print('  + Number of Transformer Params: %.2f(e6)' % (total / 1e6))
 
