@@ -9,8 +9,8 @@ from multiprocessing import Pool
 from math import ceil
 
 
-ori_path = '3D images/Ribfrac'
-save_path = '3D subvolumes/Ribfrac'
+ori_path = 'data/3D images/Ribfrac'
+save_path = 'data/3D subvolumes/Ribfrac'
 
 
 def processing(root, i_files):
