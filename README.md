@@ -46,9 +46,10 @@ pip install timm
 ```
 
 ### 1. Data Preparation
-* Download [MOTS data](https://www.synapse.org/#!Synapse:syn3193805/wiki/217789), [LIDC-IDRI dataset](https://wiki.cancerimagingarchive.net/display/Public/LIDC-IDRI), [Tianchi dataset](https://tianchi.aliyun.com/competition/entrance/231601/information?from=oldUrl), [RibFrac dataset](https://ribfrac.grand-challenge.org/), and [TCIACT dataset](https://doi.org/10.7937/TCIA.2020.GQRY-NC81), then put them into `data/3D images`
+* cd UniMiSS/data
+* Download [MOTS data](https://www.synapse.org/#!Synapse:syn3193805/wiki/217789), [LIDC-IDRI dataset](https://wiki.cancerimagingarchive.net/display/Public/LIDC-IDRI), [Tianchi dataset](https://tianchi.aliyun.com/competition/entrance/231601/information?from=oldUrl), [RibFrac dataset](https://ribfrac.grand-challenge.org/), and [TCIACT dataset](https://doi.org/10.7937/TCIA.2020.GQRY-NC81), then put them into `3D images`
 * Resample CT volumes to a unified voxel size of 1.0×1.0×3.0 mm3.
-* Run `python ` to extract about 120k sub-volumes, and put them into `data/3D subvolumes`
+* Run `python extract_subvolumes.py` to extract about 120k sub-volumes, and put them into `3D subvolumes`
 * The image folder of 3D images should look like this:
 
 ```.python
@@ -67,7 +68,7 @@ pip install timm
 ```
 
 * Download [NIH ChestX-ray8 dataset](https://nihcc.app.box.com/v/ChestXray-NIHCC)
-* Resize ChestX-ray8 images into 512×512 and put the resized images into `data/2D images`.
+* Resize ChestX-ray8 images into 512×512 and put the resized images into `2D images`.
 * The image folder of ChestX-ray8 should look like this:
 
 ```.python
