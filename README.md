@@ -96,7 +96,7 @@ If this code is helpful for your study, please cite:
   
 ```
 
-### 5. Acknowledgements
+### Acknowledgements
 Part of codes is reused from the [DINO](https://github.com/facebookresearch/dino). Thanks to Caron et al. for the codes of DINO.
 
 ### Contact
