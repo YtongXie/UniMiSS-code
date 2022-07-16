@@ -83,7 +83,7 @@ pip install timm
 * Run `sh run.sh` for self-supervised pre-training.
 
 
-### 4. Citation
+### 3. Citation
 If this code is helpful for your study, please cite:
 
 ```
