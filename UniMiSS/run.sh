@@ -1,0 +1,13 @@
+python -m torch.distributed.launch --nproc_per_node=8 --master_port=$RANDOM main.py \
+--interval=2 \
+--arch='model_small' \
+--data_path='../data/' \
+--list_path2D='2D_images.txt' \
+--list_path3D='3D_images.txt' \
+--batch_size_per_gpu=24 \
+--epochs=200 \
+--lr=0.0008 \
+--num_workers=12 \
+--momentum_teacher=0.996 \
+--clip_grad=0.3 \
+--output_dir='snapshots/UniMiSS/' \
