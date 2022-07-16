@@ -38,7 +38,6 @@ pip install scikit-image==0.18.1
 pip install scikit-learn==0.24.2
 pip install scipy==1.6.3
 pip install SimpleITK==1.2.4
-pip install six==1.16.0
 pip install sklearn==0.0
 pip install tensorboard==2.5.0
 pip install torchio==0.18.39
