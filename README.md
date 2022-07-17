@@ -98,7 +98,6 @@ If this code is helpful for your study, please cite:
   booktitle={ECCV},
   year={2022}
 }
-  
 ```
 
 ### Acknowledgements
