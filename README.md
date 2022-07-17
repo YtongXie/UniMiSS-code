@@ -15,6 +15,12 @@ Torchvision 0.8.2<br />
 ## Usage
 
 ### 0. Installation
+* Clone this repo
+```
+git clone https://github.com/YtongXie/UniMiSS-code.git
+cd UniMiSS-code
+```
+
 * Create virtual environment
 ```
 conda create --name UniMiSS python=3.7
@@ -49,33 +55,32 @@ pip install timm
 * Download [MOTS data](https://www.synapse.org/#!Synapse:syn3193805/wiki/217789), [LIDC-IDRI dataset](https://wiki.cancerimagingarchive.net/display/Public/LIDC-IDRI), [Tianchi dataset](https://tianchi.aliyun.com/competition/entrance/231601/information?from=oldUrl), [RibFrac dataset](https://ribfrac.grand-challenge.org/), and [TCIACT dataset](https://doi.org/10.7937/TCIA.2020.GQRY-NC81), then put them into `3D images`
 * Resample CT volumes to a unified voxel size of 1.0×1.0×3.0 mm3.
 * Run `python extract_subvolumes.py` to extract about 120k sub-volumes, and put them into `3D subvolumes`
-* The image folder of 3D images should look like this:
+* The image folder of 3D images should be like:
 
 ```.python
-./data/
-   3D subvolumes/
-     LIDC/
-        LKDS-00001_dep0.nii
-        ...
-     Tianchi/
-        LIDC-IDRI-0001_dep0.nii
-        ...
-     RibFrac/
-        RibFrac1-image_dep0.nii
-        ...
-     ...
+    data/3D subvolumes/
+    ├── LIDC
+    |    ├── LKDS-00001_dep0.nii
+    |    ├── ...
+    ├── Tianchi
+    |    ├── LIDC-IDRI-0001_dep0.nii
+    |    ├── ...
+    ├── RibFrac
+    |    ├── RibFrac1-image_dep0.nii
+    |    ├── ...
+    ├── ...
 ```
 
+        
 * Download [NIH ChestX-ray8 dataset](https://nihcc.app.box.com/v/ChestXray-NIHCC)
 * Resize ChestX-ray8 images into 512×512 and put the resized images into `2D images`.
 * The image folder of ChestX-ray8 should look like this:
 
 ```.python
-./data/
-   2D images/
-      00000001_000.png
-      00000001_001.png
-      ...
+    data/2D images/
+    ├── 00000001_000.png
+    ├── 00000001_001.png
+    ├── ...
 ```
 
 ### 2. Training 
