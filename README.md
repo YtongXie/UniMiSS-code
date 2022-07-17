@@ -14,7 +14,7 @@ Torchvision 0.8.2<br />
 
 ## Usage
 
-### 0. Installation
+### Installation
 * Clone this repo
 ```
 git clone https://github.com/YtongXie/UniMiSS-code.git
@@ -50,7 +50,7 @@ pip install torchio==0.18.39
 pip install timm
 ```
 
-### 1. Data Preparation
+### Data Preparation
 * cd UniMiSS/data
 * Download [MOTS data](https://www.synapse.org/#!Synapse:syn3193805/wiki/217789), [LIDC-IDRI dataset](https://wiki.cancerimagingarchive.net/display/Public/LIDC-IDRI), [Tianchi dataset](https://tianchi.aliyun.com/competition/entrance/231601/information?from=oldUrl), [RibFrac dataset](https://ribfrac.grand-challenge.org/), and [TCIACT dataset](https://doi.org/10.7937/TCIA.2020.GQRY-NC81), then put them into `3D images`
 * Resample CT volumes to a unified voxel size of 1.0×1.0×3.0 mm3.
@@ -83,12 +83,12 @@ pip install timm
     ├── ...
 ```
 
-### 2. Training 
+### Training 
 * cd UniMiSS
 * Run `sh run.sh` for self-supervised pre-training.
 
 
-### 3. Citation
+### Citation
 If this code is helpful for your study, please cite:
 
 ```
