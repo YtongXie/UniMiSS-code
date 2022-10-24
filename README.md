@@ -92,6 +92,10 @@ pip install timm
 * Pretrained models are available in [UniMiss_tiny](https://drive.google.com/file/d/1VKMm6W7GXggN0MnMwxv63pG1_DLAA1P0/view?usp=sharing) and [UniMiss_small](https://drive.google.com/file/d/1YSMeIm9rAhVgivlvIZHUYjGS0-j2mm1M/view?usp=sharing).
 
 
+### Finetuning 
+* Finetuning codes are available in [Downstream](https://github.com/YtongXie/UniMiSS-code/tree/main/UniMiSS/Downstream).
+
+
 ### Citation
 If this code is helpful for your study, please cite:
 
