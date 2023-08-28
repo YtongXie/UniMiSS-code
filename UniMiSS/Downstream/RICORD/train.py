@@ -30,9 +30,9 @@ parser.add_argument("-deterministic", default=False, help="use this if you want 
 parser.add_argument("-patience", type=int, default=30, help='number of patience')
 parser.add_argument("-seed", type=int, default=123, help='number of seed')
 
-parser.add_argument("-save_path", type=str, default='tmp', help='save path')
+parser.add_argument("-save_path", type=str, default='models/UniMiss_small', help='save path')
 parser.add_argument("-pre_train", default=False, help="use this if you want to load pretrained weights")
-parser.add_argument("-pre_train_path", type=str, default='dino_PureSmallSkip_2D_B192_LR8e-4Clip0.3_set1_nofp16_e100_14.pth.tar', help='pretrained path')
+parser.add_argument("-pre_train_path", type=str, default='models/UniMiss_small.pth', help='pretrained path')
 
 args = parser.parse_args()
 
