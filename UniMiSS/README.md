@@ -94,7 +94,7 @@ pip install timm
 
 ### Finetuning 
 * Finetuning codes are available in [Downstream](https://github.com/YtongXie/UniMiSS-code/tree/main/UniMiSS/Downstream).
-* 
+
 
 ### Acknowledgements
 Part of codes is reused from the [DINO](https://github.com/facebookresearch/dino). Thanks to Caron et al. for the codes of DINO.
