@@ -1,100 +1,15 @@
 # UniMiSS-code
-This is the official pytorch implementation of our ECCV 2022 paper "UniMiSS: Universal Medical Self-Supervised Learning via Breaking Dimensionality Barrier". In this paper, we advocate bringing a wealth of 2D images like chest X-rays as compensation for the lack of 3D data, aiming to build a universal medical self-supervised representation learning framework, called UniMiSS. We conduct expensive experiments on six 3D/2D medical image analysis tasks, including segmentation and classification. The results show that the proposed UniMiSS achieves promising performance on various downstream tasks, outperforming the ImageNet pre-training and other advanced SSL counterparts substantially.
-
-<div align="center">
-  <img width="80%" alt="DINO illustration" src=".github/UniMiSS.png">
-</div>
-
-## Requirements
-CUDA 11.0<br />
-Python 3.7<br /> 
-Pytorch 1.7.1<br /> 
-Torchvision 0.8.2<br />
+This is the official pytorch implementation of our ECCV 2022 paper "UniMiSS: Universal Medical Self-Supervised Learning via Breaking Dimensionality Barrier" and extended IEEE-TPAMI paper "UniMiSS+: Universal Medical Self-Supervised Learning From Cross-Dimensional Unpaired Data".
 
 
-## Usage
+## News
+* 5 Aug 2024: 🎉🎉🎉Our extended version UniMiSS+ has been accepted by IEEE-TPAMI (Impact Factor=20.8). Code will be released soon.
 
-### Installation
-* Clone this repo
-```
-git clone https://github.com/YtongXie/UniMiSS-code.git
-cd UniMiSS-code
-```
-
-* Create virtual environment
-```
-conda create --name UniMiSS python=3.7
-conda activate UniMiSS
-```
-
-* Install dependencies as below
-  
-```
-pip install torch==1.7.1+cu110 torchvision==0.8.2+cu110 torchaudio==0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
-pip install batchgenerators==0.21
-pip install dicom2nifti==2.3.0
-pip install matplotlib==3.4.2
-pip install ml-collections==0.1.0
-pip install nibabel==3.2.1
-pip install numpy==1.19.5
-pip install opencv-python==4.5.2.52
-pip install Pillow==8.2.0
-pip install pydicom==2.1.2
-pip install scikit-image==0.18.1
-pip install scikit-learn==0.24.2
-pip install scipy==1.6.3
-pip install SimpleITK==1.2.4
-pip install sklearn==0.0
-pip install tensorboard==2.5.0
-pip install torchio==0.18.39
-pip install timm
-```
-
-### Data Preparation
-* cd UniMiSS/data
-* Download [MOTS data](https://www.synapse.org/#!Synapse:syn3193805/wiki/217789), [LIDC-IDRI dataset](https://wiki.cancerimagingarchive.net/display/Public/LIDC-IDRI), [Tianchi dataset](https://tianchi.aliyun.com/competition/entrance/231601/information?from=oldUrl), [RibFrac dataset](https://ribfrac.grand-challenge.org/), and [TCIACT dataset](https://doi.org/10.7937/TCIA.2020.GQRY-NC81), then put them into `3D images`
-* Resample CT volumes to a unified voxel size of 1.0×1.0×3.0 mm3.
-* Run `python extract_subvolumes.py` to extract about 120k sub-volumes, and put them into `3D subvolumes`
-* The image folder of 3D images should be like:
-
-```.python
-    data/3D subvolumes/
-    ├── LIDC
-    |    ├── LKDS-00001_dep0.nii
-    |    ├── ...
-    ├── Tianchi
-    |    ├── LIDC-IDRI-0001_dep0.nii
-    |    ├── ...
-    ├── RibFrac
-    |    ├── RibFrac1-image_dep0.nii
-    |    ├── ...
-    ├── ...
-```
-
-        
-* Download [NIH ChestX-ray8 dataset](https://nihcc.app.box.com/v/ChestXray-NIHCC)
-* Resize ChestX-ray8 images into 512×512 and put the resized images into `2D images`.
-* The image folder of ChestX-ray8 should look like this:
-
-```.python
-    data/2D images/
-    ├── 00000001_000.png
-    ├── 00000001_001.png
-    ├── ...
-```
-
-### Training 
-* cd UniMiSS
-* Run `sh run.sh` for self-supervised pre-training.
-
-
-### Pretrained weights 
-* Pretrained models are available in [UniMiss_tiny](https://drive.google.com/file/d/1VKMm6W7GXggN0MnMwxv63pG1_DLAA1P0/view?usp=sharing) and [UniMiss_small](https://drive.google.com/file/d/1YSMeIm9rAhVgivlvIZHUYjGS0-j2mm1M/view?usp=sharing).
-
-
-### Finetuning 
-* Finetuning codes are available in [Downstream](https://github.com/YtongXie/UniMiSS-code/tree/main/UniMiSS/Downstream).
-
+## To do
+- [ ] UniMiSS+ fine-tuning code
+- [ ] UniMiSS+ pre-training code and weights
+- [x] UniMiSS fine-tuning code
+- [x] UniMiSS pre-training code and weights
 
 ### Citation
 If this code is helpful for your study, please cite:
@@ -105,6 +20,13 @@ If this code is helpful for your study, please cite:
   author={Xie, Yutong and Zhang, Jianpeng and Xia, Yong and Wu, Qi},
   booktitle={ECCV},
   year={2022}
+}
+@article{UniMiSS+,
+  title={UniMiSS+: Universal Medical Self-Supervised Learning From Cross-Dimensional Unpaired Data},
+  author={Xie, Yutong and Zhang, Jianpeng and Xia, Yong and Wu, Qi},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  year={2024},
+  publisher={IEEE}
 }
 ```
 
