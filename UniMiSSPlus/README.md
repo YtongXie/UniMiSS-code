@@ -2,7 +2,7 @@
 This is the official pytorch implementation of our extended IEEE-TPAMI paper ["UniMiSS+: Universal Medical Self-Supervised Learning From Cross-Dimensional Unpaired Data"](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10617802). 
 
 <div align="center">
-  <img width="80%" alt="DINO illustration" src="UniMiSSPlus.png">
+  <img width="90%" alt="DINO illustration" src="UniMISSPlus.png">
 </div>
 
 ## Requirements
