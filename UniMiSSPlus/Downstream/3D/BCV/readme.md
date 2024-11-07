@@ -9,10 +9,10 @@
 ```
 Download nnUNet from the link https://github.com/YtongXie/CoTr/tree/main/nnUNet.
 
-cd UniMiSS-code/UniMissPlus/Downstream/nnUNet
+cd UniMiSS-code/UniMiSSPlus/Downstream/nnUNet
 pip install -e .
 
-cd UniMiSS-code/UniMissPlus/Downstream/BCV/MiTnnu
+cd UniMiSS-code/UniMiSSPlus/Downstream/BCV/MiTnnu
 pip install -e .
 ```
 
@@ -23,7 +23,7 @@ pip install -e .
 * Preprocess the BCV dataset according to the uploaded nnUNet package.
 
 ### 2. Training 
-cd UniMiSS-code/UniMissPlus/Downstream/BCV/MiTnnu/run
+cd UniMiSS-code/UniMiSSPlus/Downstream/BCV/MiTnnu/run
 
 * Run `MKL_NUM_THREADS=1,NUMEXPR_NUM_THREADS=1,OMP_NUM_THREADS=1 python run_training.py --deterministic -gpu='0' -network='3d_fullres' \
 -network_trainer='TrainerV2_BCV' -task='17' -outpath='UniMissPlus' -norm_cfg='IN' -activation_cfg='LeakyReLU' -epochs=100 \
