@@ -20,9 +20,9 @@ The folder structure of the dataset should be like
     |    └── ...
 
 ### Training 
-* cd UniMiSS-code/UniMissPlus/Downstream/3D/RICORD
+* cd UniMiSS-code/UniMiSSPlus/Downstream/3D/RICORD
 
-* Download the pretrained models [UniMissPlus](https://drive.google.com/file/d/1YSMeIm9rAhVgivlvIZHUYjGS0-j2mm1M/view?) and put it into 'UniMiSS-code/UniMissPlus/snapshots/UniMissPlus/'.
+* Download the pretrained models [UniMissPlus](https://drive.google.com/file/d/1WwnmpFX_7Q0Ec7CdxRJPniLtFKg5HwU0/view?usp=sharing) and put it into 'UniMiSS-code/UniMiSSPlus/snapshots/UniMissPlus/'.
 
 * Run `python train.py -train_list='lists/RICORD_train.txt' -val_list='lists/RICORD_val.txt' -GPU='0' -NUM_CLASSES=2 -BATCH_SIZE=8 -EPOCH=200 -TRAIN_NUM=512 -LEARNING_RATE=0.00001 -optimizer='AdamW' -save_path='models/' -pre_train=True -pre_train_path='../../../snapshots/UniMissPlus/UniMissPlus.pth'` for training.
 
