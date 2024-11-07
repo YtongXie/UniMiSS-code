@@ -20,7 +20,7 @@ pip install -e .
 
 ** Take the BCV dataset as an example,
 * Download [BCV dataset](https://www.synapse.org/#!Synapse:syn3193805/wiki/217789)
-* Preprocess the BCV dataset according to the uploaded nnUNet package.
+* Preprocess the BCV dataset according to the nnUNet package.
 
 ### 2. Training 
 cd UniMiSS-code/UniMiSSPlus/Downstream/BCV/MiTnnu/run
