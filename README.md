@@ -1,13 +1,9 @@
 # UniMiSS & UniMiSS+
 This is the official pytorch implementation of our ECCV 2022 paper "UniMiSS: Universal Medical Self-Supervised Learning via Breaking Dimensionality Barrier" and extended IEEE-TPAMI paper "UniMiSS+: Universal Medical Self-Supervised Learning From Cross-Dimensional Unpaired Data".
 
-
-## News
-* 5 Aug 2024: 🎉🎉🎉Our extended version UniMiSS+ has been accepted by IEEE-TPAMI (Impact Factor=20.8). Code will be released soon.
-
 ## To do
-- [ ] UniMiSS+ fine-tuning code
-- [ ] UniMiSS+ pre-training code and weights
+- [x] UniMiSS+ fine-tuning code
+- [x] UniMiSS+ pre-training code and weights
 - [x] UniMiSS fine-tuning code
 - [x] UniMiSS pre-training code and weights
 
