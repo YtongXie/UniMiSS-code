@@ -41,19 +41,7 @@ The folder structure of the dataset should be like
 ### Run 
 * cd UniMiSS-code/UniMissPlus/Downstream/2D/Cls
 
-* Run `python main.py \
--train_list='dataset/CXR_Covid-19/CXR_Covid-19_Challenge_train_all.txt' \
--test_list='dataset/CXR_Covid-19/CXR_Covid-19_Challenge_test.txt' \
--GPU='0' \
--NUM_CLASSES=3 \
--BATCH_SIZE=32 \
--EPOCH=30 \
--deterministic=True \
--LEARNING_RATE=0.0001 \
--optimizer='AdamW' \
--save_path='models/UniMissPlus/' \
--pre_train=True \
--pre_train_path='../../../snapshots/UniMissPlus/UniMissPlus.pth'` for training and validation.
+* Run `python main.py -train_list='dataset/CXR_Covid-19/CXR_Covid-19_Challenge_train_all.txt' -test_list='dataset/CXR_Covid-19/CXR_Covid-19_Challenge_test.txt' -GPU='0' -NUM_CLASSES=3 -BATCH_SIZE=32 -EPOCH=30 -deterministic=True -LEARNING_RATE=0.0001 -optimizer='AdamW' -save_path='models/UniMissPlus/' -pre_train=True -pre_train_path='../../../snapshots/UniMissPlus/UniMissPlus.pth'` for training and validation.
 
 
 ### Contact
