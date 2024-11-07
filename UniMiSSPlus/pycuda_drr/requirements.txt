@@ -1,0 +1,4 @@
+pytools==2022.1.9
+pycuda==2021.1
+numpy==1.19.2
+imageio==2.6.1
