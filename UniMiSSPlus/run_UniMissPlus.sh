@@ -1,1 +1,14 @@
-
+python -m torch.distributed.launch --nproc_per_node=8 --master_port=$RANDOM main_UniMissPlus.py \
+--interval3d=1 \
+--interval2d=1 \
+--arch='MiTplus' \
+--data_path='data/' \
+--list_path2D='2D_images.txt' \
+--list_path3D='3D_images.txt' \
+--batch_size_per_gpu=12 \
+--epochs=401 \
+--lr=0.0008 \
+--weights_s=0.1 \
+--weights_drr=0.5 \
+--weights_re=5 \
+--output_dir='snapshots/UniMissPlus'
